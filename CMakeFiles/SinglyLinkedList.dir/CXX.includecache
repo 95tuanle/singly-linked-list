@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tuanle/Library/Mobile Documents/com~apple~CloudDocs/School/C++/In Class Exercises/SinglyLinkedList/Node.hpp
+
+/Users/tuanle/Library/Mobile Documents/com~apple~CloudDocs/School/C++/In Class Exercises/SinglyLinkedList/SinglyLinkedList.hpp
+iostream
+/Users/tuanle/Library/Mobile Documents/com~apple~CloudDocs/School/C++/In Class Exercises/SinglyLinkedList/iostream
+Node.hpp
+/Users/tuanle/Library/Mobile Documents/com~apple~CloudDocs/School/C++/In Class Exercises/SinglyLinkedList/Node.hpp
+
+/Users/tuanle/Library/Mobile Documents/com~apple~CloudDocs/School/C++/In Class Exercises/SinglyLinkedList/main.cpp
+iostream
+-
+Node.hpp
+/Users/tuanle/Library/Mobile Documents/com~apple~CloudDocs/School/C++/In Class Exercises/SinglyLinkedList/Node.hpp
+SinglyLinkedList.hpp
+/Users/tuanle/Library/Mobile Documents/com~apple~CloudDocs/School/C++/In Class Exercises/SinglyLinkedList/SinglyLinkedList.hpp
+
