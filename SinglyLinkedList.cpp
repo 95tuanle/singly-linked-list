@@ -62,7 +62,7 @@ void SinglyLinkedList::populatePosition(int position) {
         if (current == NULL) {
             ableToPopulate = false;
             break;
-        } else if (current->getNext() == NULL){
+        } else if (current->getNext() == NULL) {
             ableToPopulate = false;
             break;
         } else {
