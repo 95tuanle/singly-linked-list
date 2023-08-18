@@ -13,7 +13,7 @@ private:
 public:
     Node(int data, Node *next);
 
-    Node(int data);
+    explicit Node(int data);
 
     Node();
 
@@ -21,11 +21,11 @@ public:
 
     int getData() const;
 
-    void setData(int data);
+    void setData(int newData);
 
     Node *getNext() const;
 
-    void setNext(Node *next);
+    void setNext(Node *nextNode);
 
 
 };

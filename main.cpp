@@ -6,9 +6,9 @@
 int main() {
 //    SinglyLinkedList *singlyLinkedList = new SinglyLinkedList;
     Node *node = new Node;
-    node->setNext(NULL);
+    node->setNext(nullptr);
     node->setData(5);
-    SinglyLinkedList singlyLinkedList;
+    SinglyLinkedList singlyLinkedList(node);
     std::cout << singlyLinkedList;
     singlyLinkedList.populateFirst();
     singlyLinkedList.reverseList();

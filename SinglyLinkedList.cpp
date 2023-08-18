@@ -16,8 +16,8 @@ Node *SinglyLinkedList::getHead() const {
     return head;
 }
 
-void SinglyLinkedList::setHead(Node *head) {
-    SinglyLinkedList::head = head;
+void SinglyLinkedList::setHead(Node *headNode) {
+    SinglyLinkedList::head = headNode;
 }
 
 void SinglyLinkedList::addNode(int data) {

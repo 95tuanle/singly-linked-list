@@ -18,14 +18,14 @@ int Node::getData() const {
     return data;
 }
 
-void Node::setData(int data) {
-    Node::data = data;
+void Node::setData(int newData) {
+    Node::data = newData;
 }
 
 Node *Node::getNext() const {
     return next;
 }
 
-void Node::setNext(Node *next) {
-    Node::next = next;
+void Node::setNext(Node *nextNode) {
+    Node::next = nextNode;
 }

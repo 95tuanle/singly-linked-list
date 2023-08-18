@@ -14,13 +14,13 @@ private:
 public:
     SinglyLinkedList();
 
-    SinglyLinkedList(Node *head);
+    explicit SinglyLinkedList(Node *head);
 
     virtual ~SinglyLinkedList();
 
     Node *getHead() const;
 
-    void setHead(Node *head);
+    void setHead(Node *headNode);
 
     void addNode(int data);
 
