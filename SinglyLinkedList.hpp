@@ -10,7 +10,7 @@
 
 class SinglyLinkedList {
 private:
-    Node *head;
+    Node *head{};
 public:
     SinglyLinkedList();
 

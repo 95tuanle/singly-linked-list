@@ -4,13 +4,11 @@
 
 #include "SinglyLinkedList.hpp"
 
-SinglyLinkedList::SinglyLinkedList() {}
+SinglyLinkedList::SinglyLinkedList() = default;
 
 SinglyLinkedList::SinglyLinkedList(Node *head) : head(head) {}
 
-SinglyLinkedList::~SinglyLinkedList() {
-
-}
+SinglyLinkedList::~SinglyLinkedList() = default;
 
 Node *SinglyLinkedList::getHead() const {
     return head;
@@ -22,12 +20,12 @@ void SinglyLinkedList::setHead(Node *headNode) {
 
 void SinglyLinkedList::addNode(int data) {
     Node *node = new Node(data);
-    node->setNext(NULL);
-    if (head == NULL) {
+    node->setNext(nullptr);
+    if (head == nullptr) {
         setHead(node);
     } else {
         Node *temp = head;
-        while (temp->getNext() != NULL) {
+        while (temp->getNext() != nullptr) {
             temp = temp->getNext();
         }
         temp->setNext(node);
@@ -36,8 +34,8 @@ void SinglyLinkedList::addNode(int data) {
 
 std::ostream &operator<<(std::ostream &os, const SinglyLinkedList &list) {
     Node *node = list.getHead();
-    if (node != NULL) {
-        while (node->getNext() != NULL) {
+    if (node != nullptr) {
+        while (node->getNext() != nullptr) {
             os << node->getData() << " : ";
             node = node->getNext();
         }
@@ -49,7 +47,7 @@ std::ostream &operator<<(std::ostream &os, const SinglyLinkedList &list) {
 }
 
 void SinglyLinkedList::populateFirst() {
-    if (head != NULL) {
+    if (head != nullptr) {
         setHead(head->getNext());
     }
 }
@@ -59,10 +57,7 @@ void SinglyLinkedList::populatePosition(int position) {
     Node *previous;
     bool ableToPopulate = true;
     for (int i = 1; i < position; ++i) {
-        if (current == NULL) {
-            ableToPopulate = false;
-            break;
-        } else if (current->getNext() == NULL) {
+        if (current == nullptr || current->getNext() == nullptr) {
             ableToPopulate = false;
             break;
         } else {
@@ -76,18 +71,18 @@ void SinglyLinkedList::populatePosition(int position) {
 }
 
 void SinglyLinkedList::deleteList() {
-    while (head != NULL) {
+    while (head != nullptr) {
         populateFirst();
     }
 }
 
 void SinglyLinkedList::reverseList() {
-    if (head != NULL) {
-        if (head->getNext() != NULL) {
+    if (head != nullptr) {
+        if (head->getNext() != nullptr) {
             Node *current = head;
             Node *next = head->getNext();
-            Node *previous = NULL;
-            while (next != NULL) {
+            Node *previous = nullptr;
+            while (next != nullptr) {
                 Node *temp = current;
                 current->setNext(previous);
                 previous = temp;
