@@ -3,7 +3,7 @@ project(SinglyLinkedList)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SinglyLinkedList
+add_executable(singly-linked-list
         main.cpp
         Node.cpp
         Node.hpp
