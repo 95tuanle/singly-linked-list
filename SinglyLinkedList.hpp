@@ -11,6 +11,7 @@
 class SinglyLinkedList {
 private:
     Node *head{};
+
 public:
     SinglyLinkedList();
 
