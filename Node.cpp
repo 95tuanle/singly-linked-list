@@ -6,9 +6,11 @@
 
 Node::Node() = default;
 
-Node::Node(int data, Node *next) : data(data), next(next) {}
+Node::Node(int data, Node *next) : data(data), next(next) {
+}
 
-Node::Node(int data) : data(data) {}
+Node::Node(int data) : data(data) {
+}
 
 Node::~Node() = default;
 

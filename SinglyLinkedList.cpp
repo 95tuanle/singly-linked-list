@@ -6,7 +6,8 @@
 
 SinglyLinkedList::SinglyLinkedList() = default;
 
-SinglyLinkedList::SinglyLinkedList(Node *head) : head(head) {}
+SinglyLinkedList::SinglyLinkedList(Node *head) : head(head) {
+}
 
 SinglyLinkedList::~SinglyLinkedList() = default;
 

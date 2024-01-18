@@ -4,7 +4,7 @@
 
 
 int main() {
-//    SinglyLinkedList *singlyLinkedList = new SinglyLinkedList;
+    //    SinglyLinkedList *singlyLinkedList = new SinglyLinkedList;
     Node *node = new Node;
     node->setNext(nullptr);
     node->setData(5);
